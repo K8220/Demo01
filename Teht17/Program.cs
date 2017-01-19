@@ -15,11 +15,22 @@ namespace Teht17
 
             int[] valmis = new int[10];
 
-            for (int i = 0; i <= 9;i++)
-                for (int a = 0;a<=4;a++)
+            // Vaatiiko sorttaus loopin?
+
+            int a = -1;
+            for (int i = 0; i <= 9; i=i+2)
             {
-                    valmis[i] = kympit[a];
+                a++;
+                    valmis[i] = vitoset[a];
             }
+
+            int b = -1;
+            for (int i = 1; i <= 9; i = i + 2)
+            {
+                b++;
+                valmis[i] = kympit[b];
+            }
+
             foreach (int item in valmis)
             { Console.WriteLine(item.ToString()); }
 

@@ -10,17 +10,15 @@ namespace Teht10
     {
         static void Main(string[] args)
         {
-            int luku = 0, sum = 0;
-
-            do
+            int[] array = new int[9] { 1, 2, 33, 44, 55, 68, 77, 96, 100 };
+            
+            for (int i = 0 ; i <=8; i++)
             {
-                Console.Write("Gimme your numbers > ");
-                string line = Console.ReadLine();
-                luku = int.Parse(line);
-                sum = sum + luku;
-            } while (luku != 0);
-
-            Console.WriteLine(sum);
+                Console.WriteLine(array[i]);
+                if (array[i] % 2 == 0)
+                { Console.WriteLine("HEP!!"); }
+            }
+            Console.ReadLine();
         }
     }
 }

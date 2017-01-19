@@ -20,6 +20,12 @@ namespace Teh07
             {
                 Console.WriteLine(vuosi + " on karkausvuosi.");
             }
+
+            else if (vuosi % 4 == 0 && vuosi % 100 ==  0)
+            {
+                Console.WriteLine(vuosi + " ei ole karkausvuosi.");
+            }
+
             else if (vuosi % 4 == 0)
             {
                 Console.WriteLine(vuosi + " on karkausvuosi.");

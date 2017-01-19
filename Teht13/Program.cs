@@ -49,6 +49,7 @@ namespace Teht13
             hyppy[0] > hyppy[4])
             {
                 holder = hyppy[0];
+                hyppy[0] = hyppy[1]
             }
 
             if
@@ -57,14 +58,21 @@ namespace Teht13
             hyppy[1] > hyppy[4])
             {
                 holder = hyppy[1];
+                hyppy[1]
             }
 
             if
             (hyppy[2] > hyppy[3] &&
             hyppy[2] > hyppy[4])
+            {
+                holder = hyppy[2];
+            }
 
                 if
                 (hyppy[3] > hyppy[4]) ;
+            {
+                holder = hyppy[3];
+            }
 
 
 

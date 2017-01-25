@@ -20,14 +20,14 @@ namespace Teht12
             {
                 string line = Console.ReadLine();
                 luvut[j] = int.Parse(line);
-                j++;
+                j++; // it goes up
             }
 
             Console.WriteLine("You gave me these numbers and I reversed their order:");
             while (i > 0)
             {
                 Console.Write(luvut[i] + ", ");
-                i--;
+                i--; // it comes down
             }
             Console.Write(luvut[i] + ".");
 

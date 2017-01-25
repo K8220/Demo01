@@ -10,73 +10,18 @@ namespace Teht13
     {
         static void Main(string[] args)
         {
-            int[] hyppy;
-            hyppy = new int[5];
-            int i = 0;
-            int j = 0;
-            int sum = 0;
-
-            while (i < 5)
+            int[] pisteet = new int[5];
+            Console.WriteLine("Give me 5 scores > ");
+            for (int i = 0; i <= 4; i++)
             {
                 string line = Console.ReadLine();
-                hyppy[i] = int.Parse(line);
-                i++;
+                pisteet[i] = int.Parse(line);
             }
 
-            sum = hyppy[0] + hyppy[1] + hyppy[2] + hyppy[3] + hyppy[4];
-            Console.WriteLine(sum);
+            Array.Sort(pisteet); // handy dandy sortti
 
-            for (int y = 0; y < 5; y++)
-            {
-                for (int x = 1; x < 5; x++)
-                {
-                    if (hyppy[y] < hyppy[x])
-                    {
-                        int z = hyppy[y];
-                        hyppy[y] = hyppy[x];
-                        hyppy[x] = z;
-                    }
-                }
-            }
-            Console.WriteLine(hyppy[0] + hyppy[1] + hyppy[2] + hyppy[3] + hyppy[4]);
-
-            int holder = 0;
-
-            if
-            (hyppy[0] > hyppy[1] &&
-            hyppy[0] > hyppy[2] &&
-            hyppy[0] > hyppy[3] &&
-            hyppy[0] > hyppy[4])
-            {
-                holder = hyppy[0];
-                hyppy[0] = hyppy[1]
-            }
-
-            if
-            (hyppy[1] > hyppy[2] &&
-            hyppy[1] > hyppy[3] &&
-            hyppy[1] > hyppy[4])
-            {
-                holder = hyppy[1];
-                hyppy[1]
-            }
-
-            if
-            (hyppy[2] > hyppy[3] &&
-            hyppy[2] > hyppy[4])
-            {
-                holder = hyppy[2];
-            }
-
-                if
-                (hyppy[3] > hyppy[4]) ;
-            {
-                holder = hyppy[3];
-            }
-
-
-
-
+            Console.WriteLine("These are the 3 mid range values:");
+            Console.Write(pisteet[1] + " " + pisteet[2] + " " + pisteet[3]);
             Console.ReadLine();
         }
     }

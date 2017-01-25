@@ -14,7 +14,7 @@ namespace Teht10
 
             do
             {
-                Console.Write("Gimme your numbers > ");
+                Console.Write("Gimme your numbers (quit with 0) > ");
                 string line = Console.ReadLine();
                 luku = int.Parse(line);
                 sum = sum + luku;

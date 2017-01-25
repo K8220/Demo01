@@ -10,18 +10,35 @@ namespace Teht15
     {
         static void Main(string[] args)
         {
-            int korkeus;
-            
-            Console.Write("Anna luku > ");
+            int lines = 0;
+            Console.WriteLine("Luku = korkeus");
             string line = Console.ReadLine();
-            korkeus = int.Parse(line);
-
-            for (int j = 1; j < (korkeus*2); j=j+2)
+            lines = int.Parse(line);
+            // DA TOP
+            for (int i = 0; i < lines-2; i++) // loopdyloop minus 2 for TRUNK! ...haha
             {
-                for (int i = 1; i+2 <= j; i++)
-                { Console.Write("*"); }
+                for (int j = 0; j < lines - i - 1; j++) // aaaalign the trunk
+                {
+                    Console.Write(" ");
+                }
+
+                for (int y = 0; y < i * 2 + 1; y++) // 1*2+1=3, 2*2+1=5 etc.
+                {
+                    Console.Write("*");
+                }
                 Console.WriteLine();
             }
+            // DA STUMP
+            for (int i = 0; i <= 1; i++) // 2 lines tall trunk please (change i <= -whatever- for palm trees.)
+            {
+                for (int j = 0; j < lines-1; j++ ) // copypasta empty spaces
+                {
+                    Console.Write(" ");
+                }
+                Console.WriteLine("*"); // BAM!
+            }
+            // IF Satan wrote code, I think it would be something like this.
         }
     }
+
 }

@@ -16,6 +16,7 @@ namespace ConsoleApplication1
             string line = Console.ReadLine();
             age = int.Parse(line);
 
+            //self explanatory
             if (age < 18)
                 Console.WriteLine("Underage");
 

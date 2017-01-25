@@ -10,17 +10,19 @@ namespace Teh07
     {
         static void Main(string[] args)
         {
-            int vuosi, vv;
+            int vuosi;
 
             Console.WriteLine("Syötä vuosi > ");
             string line = Console.ReadLine();
             vuosi = int.Parse(line);
 
+            // Check year
             if (vuosi % 400 == 0)
             {
                 Console.WriteLine(vuosi + " on karkausvuosi.");
             }
 
+            // countering them false ones
             else if (vuosi % 4 == 0 && vuosi % 100 ==  0)
             {
                 Console.WriteLine(vuosi + " ei ole karkausvuosi.");

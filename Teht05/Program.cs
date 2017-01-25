@@ -16,7 +16,7 @@ namespace Teht05
             string line = Console.ReadLine();
             second = int.Parse(line);
 
-            
+            // Math, oh my dog!
             hours = second / 3600;
             minutes = (second  % 3600) / 60;
             seconds = (second % 3600) % 60;

@@ -19,8 +19,8 @@ namespace Teht03
             string line3 = Console.ReadLine();
             num3 = int.Parse(line3);
 
-            sum = num1 + num2 + num3;
-            avg = sum / 3;
+            sum = num1 + num2 + num3; // summa
+            avg = sum / 3; // using sum to get average
 
             Console.WriteLine("Summa = " + sum);
             Console.WriteLine("Keskiarvo = " + avg);

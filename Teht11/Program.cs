@@ -18,13 +18,14 @@ namespace Teht11
             luku = int.Parse(line);
 
             Console.WriteLine();
-
+            // loop till i = luku
             for (int i = 0; i < luku; i++)
             {
+                // loop till j = i
                 for (int j = -1; j < i; j++)
                     Console.Write('*');
                 Console.WriteLine();
-            }
+            } // AGAIN ^^^^
         }
     }
 }

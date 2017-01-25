@@ -11,13 +11,13 @@ namespace Teht16
         static void Main(string[] args)
         {
             Random random = new Random();
-            int randomNumber = random.Next(1, 100);
+            int randomNumber = random.Next(1, 100); // väliltä 1-100
             int answer;
             int tries = 0;
 
             do 
             {
-                tries++;
+                tries++; // +1 per loop
                 Console.Write("Arvaa luku > ");
                 string line = Console.ReadLine();
                 answer = int.Parse(line);
@@ -32,7 +32,7 @@ namespace Teht16
                     Console.WriteLine("Oikea luku on suurempi.");
                 }
 
-            } while (answer != randomNumber);
+            } while (answer != randomNumber); // jatkuu kunnes osutaan oikeaan
 
             Console.WriteLine("Woohoo! Arvasit " + tries + " kertaa.");
             Console.ReadLine();

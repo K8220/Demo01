@@ -15,7 +15,7 @@ namespace Teht14
             int nolla = 0, yksi = 0, kaksi = 0, kolme = 0, nelja = 0, viisi = 0;
             for (int i = 0; i < 10; i++)
             {
-                Console.Write("Arvosana 0-5 > ");
+                Console.Write("Arvosana 0-5, 10 lukua > ");
                 do
                 {
                     string line = Console.ReadLine();
@@ -39,7 +39,7 @@ namespace Teht14
                 }
                 while (tarkistus > 5 || tarkistus < 0);
             }
-
+            // for and for and fooooorever
             Console.WriteLine("Arvosanat:");
             /////
             Console.Write("0:");

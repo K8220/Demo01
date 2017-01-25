@@ -16,6 +16,7 @@ namespace Teht06
             string line = Console.ReadLine();
             matka = int.Parse(line);
 
+            // Such math. Wow.
             litra = (7.02 / 100) * matka;
             hinta = litra * 1.595;
 

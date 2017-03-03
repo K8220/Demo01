@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="bc2a6fba-1de6-4956-90e0-a728e4dfbc13"
+    Name="b20fa143-c091-48ae-89e3-fe13aea0b677"
     Publisher="CN=Potatti"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="bc2a6fba-1de6-4956-90e0-a728e4dfbc13" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="b20fa143-c091-48ae-89e3-fe13aea0b677" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Test</DisplayName>
+    <DisplayName>LottoPrime</DisplayName>
     <PublisherDisplayName>Potatti</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="Test.App">
+      EntryPoint="LottoPrime.App">
       <uap:VisualElements
-        DisplayName="Test"
+        DisplayName="LottoPrime"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="Test"
+        Description="LottoPrime"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
